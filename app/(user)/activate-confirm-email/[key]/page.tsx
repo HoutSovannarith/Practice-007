@@ -9,6 +9,7 @@ type Props = {
 
 import style from './style.module.css';
 import {FooterDivider} from "flowbite-react";
+import Button from "@/app/(user)/activate-confirm-email/[key]/components/Button";
 // import Button
 export default function ConfirmEmail() {
     return (
@@ -30,7 +31,9 @@ export default function ConfirmEmail() {
                 <p className="text-3xl">
                     Your email confirmed! you can go to login page by press below button!
                 </p>
+                <FooterDivider/>
                 {/*  Button  */}
+                <Button title={"Login"}/>
             </section>
         </main>
     )
