@@ -1,0 +1,32 @@
+export const MenuList = [
+    {
+        name:"Home",
+        path:"/",
+        active:true,
+    },
+    {
+        name:"Products",
+        path:"/products",
+        active:false,
+    },
+    {
+        name:"Service",
+        path:"/service",
+        active:false,
+    },
+    {
+        name:"About",
+        path:"/about",
+        active:false,
+    },
+    {
+        name:"Contact",
+        path:"/contact",
+        active:false,
+    },
+    {
+        name:"Enroll",
+        path:"/enroll",
+        active:false,
+    }
+]
