@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "My next.js App",
         description: "Testing using metadata in nextjs",
-        images:"https://tse2.mm.bing.net/th/id/OIG3.EWlw7z9GbyIZqfKlxd5L?pid=ImgGn"
+        // images:"https://tse2.mm.bing.net/th/id/OIG3.EWlw7z9GbyIZqfKlxd5L?pid=ImgGn"
     }
 };
 

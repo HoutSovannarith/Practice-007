@@ -15,6 +15,10 @@ const getData = async (id:number) => {
     return data;
 }
 
+// export async function generateMetadata(){
+//
+// }
+
 export default async function Detail(props: PropsParams) {
     const data = await getData(props.params.id);
     return (
