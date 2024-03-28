@@ -4,6 +4,7 @@ import {usePathname} from 'next/navigation'
 import Link from "next/link";
 import {useState} from "react";
 import {MenuList} from "@/components/navbar/menu";
+import Image from "next/image";
 
 export default function NavbarComponent() {
     const pathname = usePathname();
@@ -11,7 +12,7 @@ export default function NavbarComponent() {
     return (
         <Navbar fluid rounded>
             <NavbarBrand href="/">
-                <img src="/next.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo"/>
+                <Image src="/next.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo"/>
                 <span
                     className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
             </NavbarBrand>
@@ -21,7 +22,7 @@ export default function NavbarComponent() {
             </div>
             <NavbarCollapse>
                 {MenuList.map((item, index) => (
-                    <NavbarLink as={Link} href={item.path} active={item.path === pathname}>
+                    <NavbarLink key={index} as={Link} href={item.path} active={item.path === pathname}>
                         {item.name}
                     </NavbarLink>))}
             </NavbarCollapse>
